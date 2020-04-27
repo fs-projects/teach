@@ -74,7 +74,7 @@ class App extends Component {
             const filled = values.length === CODE_LENGTH.length && index === CODE_LENGTH.length - 1;
 
             return (
-              <div className="display">
+              <div className="display" key={index}>
                 {values[index]}
                 {(selected || filled) && focused && <div className="shadows" />}
               </div>
